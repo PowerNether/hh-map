@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>HomeHunter</title>
+  </head>
+  <body class="page-node-2">
+    <div class="filter-menu">
+      <div class="menu-search">
+        <svg>
+          <use xlink:href="./image/icons.svg#search" />
+        </svg>
+        <input type="text" placeholder="Введите параметр, ID, адрес или ЖК" />
+      </div>
+      <div class="menu-selected">
+        <p>Комнат</p>
+        <span class="rooms-sum">4</span>
+        <svg>
+          <use xlink:href="./image/icons.svg#charon" />
+        </svg>
+      </div>
+      <div class="menu-price">
+        <input type="text" placeholder="от" />
+        <p>...</p>
+        <input type="text" placeholder="до" />
+      </div>
+      <div class="menu-currency">
+        <button class="currenct-one active">₽</button>
+        <button class="currenct-two">$</button>
+      </div>
+      <div class="menu-area">
+        <input type="text" placeholder="от" />
+        <p>...</p>
+        <input type="text" placeholder="до" />
+        <p class="area-desc">м<sup>2</sup></p>
+      </div>
+      <div class="menu-selected">
+        <p>Отделка</p>
+        <span class="rooms-sum">2</span>
+        <svg>
+          <use xlink:href="./image/icons.svg#charon" />
+        </svg>
+      </div>
+      <div class="menu-selected">
+        <p>Ещё фильтры</p>
+        <span class="rooms-sum">7</span>
+        <svg>
+          <use xlink:href="./image/icons.svg#charon" />
+        </svg>
+      </div>
+      <div class="menu-button">
+        <button class="openmodal">Показать <span>830</span></button>
+      </div>
+      <div class="modal-filter">
+        <h2 class="modal-title">Расположение и планировка</h2>
+        <form>
+          <div class="inputs">
+            <div class="input">
+              <p class="input-title">Год постройки</p>
+              <div>
+                <input type="text" placeholder="от" />
+                <p>...</p>
+                <input type="text" placeholder="до" />
+              </div>
+            </div>
+            <div class="input">
+              <p class="input-title">Этаж</p>
+              <div>
+                <input type="text" placeholder="от" />
+                <p>...</p>
+                <input type="text" placeholder="до" />
+              </div>
+            </div>
+            <div class="input">
+              <p class="input-title">Квартир на этаже</p>
+              <div>
+                <input type="text" placeholder="от" />
+                <p>...</p>
+                <input type="text" placeholder="до" />
+              </div>
+            </div>
+            <div class="input">
+              <p class="input-title">Жилая площадь</p>
+              <div>
+                <input type="text" placeholder="от" />
+                <p>...</p>
+                <input type="text" placeholder="до" />
+                <p class="area-desc">м<sup>2</sup></p>
+              </div>
+            </div>
+            <div class="input">
+              <p class="input-title">Площадь кухни</p>
+              <div>
+                <input type="text" placeholder="от" />
+                <p>...</p>
+                <input type="text" placeholder="до" />
+
+                <p class="area-desc">м<sup>2</sup></p>
+              </div>
+            </div>
+            <div class="input">
+              <p class="input-title">Площадь терассы</p>
+              <div>
+                <input type="text" placeholder="от" />
+                <p>...</p>
+                <input type="text" placeholder="до" />
+
+                <p class="area-desc">м<sup>2</sup></p>
+              </div>
+            </div>
+            <div class="input">
+              <p class="input-title">Высота потолков</p>
+              <div>
+                <input type="text" placeholder="от" />
+                <p>...</p>
+                <input type="text" placeholder="до" />
+
+                <p class="area-desc">м<sup>2</sup></p>
+              </div>
+            </div>
+          </div>
+          <div class="tags">
+            <p>Свободная планировка</p>
+            <p>Видовая <span class="hint">?</span></p>
+            <p>Готовый дизайн-проект</p>
+            <p>Лоджия/балкон</p>
+            <p>Изолированность кухни <span class="color-p">0</span></p>
+            <p>Второй свет <span class="hint">?</span></p>
+            <p>Окна выходят <span class="color-p">0</span></p>
+            <p>Выход окон на 3+ стороны</p>
+            <p>Панорамные окна</p>
+            <p>Ванная с окном</p>
+            <p>Отдельный вход</p>
+            <p>Свой лифт до квартиры</p>
+            <p>Санузлов <span class="color-p">0</span></p>
+            <p>Детская с санузлом</p>
+            <p>Спальня с санузлом</p>
+            <p>Спальня с гардеробной</p>
+            <p>Дровяной камин</p>
+            <p>Сауна в квартире</p>
+          </div>
+        </form>
+        <div class="buttons">
+          <button class="show">Показать <span>830</span></button>
+          <button class="clear">Сбросить все фильтры</button>
+          <a class="hideModal" href="#">Свернуть фильтры</a>
+        </div>
+      </div>
+    </div>
+    <div class="filter-map">
+      <div class="map-card">
+        <div class="card-overlay">
+          <div class="tags">
+            <div class="chip color-p">
+              Квартиры
+              <svg>
+                <use xlink:href="./image/icons.svg#close" />
+              </svg>
+            </div>
+            <div class="chip color-g">
+              Апартаменты
+              <svg>
+                <use xlink:href="./image/icons.svg#close" />
+              </svg>
+            </div>
+            <div class="chip color-p">
+              С отделкой
+              <svg>
+                <use xlink:href="./image/icons.svg#close" />
+              </svg>
+            </div>
+            <div class="chip color-g">
+              Без отделки
+              <svg>
+                <use xlink:href="./image/icons.svg#close" />
+              </svg>
+            </div>
+            <div class="tags-list">
+              <svg>
+                <use xlink:href="./image/icons.svg#list" />
+              </svg>
+              <p>Списком</p>
+            </div>
+            <div class="chip color-v">
+              1, 3, 5-к., студия
+              <svg>
+                <use xlink:href="./image/icons.svg#close" />
+              </svg>
+            </div>
+            <div class="chip color-v">
+              Панорамные окна
+              <svg>
+                <use xlink:href="./image/icons.svg#close" />
+              </svg>
+            </div>
+            <div class="chip color-w">
+              Еще
+              <svg>
+                <use xlink:href="./image/icons.svg#charon" />
+              </svg>
+            </div>
+            <div class="chip color-lp">Сбросить все фильтры</div>
+          </div>
+          <div class="points">
+            <div class="points-item point-one">
+              <div class="item-circle color-g">
+                <p></p>
+              </div>
+              <div class="item-text">
+                <p>ЖК «Turandot Residences»</p>
+              </div>
+            </div>
+            <div class="points-item point-two">
+              <div class="item-circle color-v">
+                <p>2</p>
+              </div>
+              <div class="item-text">
+                <p>ЖК «Cloud Nine»</p>
+              </div>
+            </div>
+            <div class="points-item point-three">
+              <div class="item-circle color-green">
+                <p>1</p>
+              </div>
+              <div class="item-text">
+                <p>ЖК «Доходный Дом Вильнера-Калиновского»</p>
+              </div>
+            </div>
+          </div>
+          <div class="symbol">
+            <p>
+              <span class="color-v"></span>
+              ЖК по фильтру
+            </p>
+            <p class="margin-16">
+              <span class="color-g"></span>
+              ЖК вне фильтра
+            </p>
+            <p>
+              <span class="color-green"></span>
+              Новостройки
+            </p>
+          </div>
+        </div>
+        <img src="./image/map.png" alt="Карта" class="card" />
+      </div>
+      <div class="map-apart">
+        <div class="apart-mainLot">
+          <div class="mainLot-desc">
+            <div class="desc-logo">
+              <img src="./image/logo.png" alt="logo" />
+            </div>
+            <h3 class="desc-title">ЖК «Cloud Nine»</h3>
+            <p class="desc-street">ЦАО, Якиманка, Большая Полянка улица, 9</p>
+            <p class="desc-other">
+              <span class="color-o"></span> Третьяковская ~5 мин. пешком
+              <svg>
+                <use xlink:href="./image/icons.svg#check" />
+              </svg>
+              Подземный паркинг
+            </p>
+          </div>
+          <div class="mainLot-images">
+            <div class="images-video">
+              <a href="#">
+                Видео <br />
+                обзор
+              </a>
+              <img src="./image/image(1).png" alt="img" />
+            </div>
+            <img src="./image/image(2).png" alt="img" />
+            <img src="./image/image(3).png" alt="img" />
+            <img src="./image/image(4).png" alt="img" />
+            <img src="./image/image(5).png" alt="img" />
+          </div>
+          <div class="mainLot-other">
+            <p class="color-green">Сдан в 4 кв. 2019</p>
+            <p>30 квартир/апартаментов в ЖК</p>
+            <p class="color-g">От 149 600 ₽/м²</p>
+            <a href="#">
+              Подробнее
+              <svg>
+                <use xlink:href="./image/icons.svg#charon" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="apart-otherLots">
+          <div class="otherLots-filter">
+            <p>Объектов:</p>
+            <div class="buttons">
+              <button class="active button-left">140 найдено</button>
+              <button class="button-right">800 в продаже</button>
+            </div>
+            <a href="#">
+              По рейтингу
+              <svg>
+                <use xlink:href="./image/icons.svg#charon" />
+              </svg>
+            </a>
+            <div class="buttons mini">
+              <button class="button-left">
+                <svg>
+                  <use xlink:href="./image/icons.svg#typeBlock" />
+                </svg>
+              </button>
+              <button>
+                <svg>
+                  <use xlink:href="./image/icons.svg#typeBlocks" />
+                </svg>
+              </button>
+              <button>
+                <svg>
+                  <use xlink:href="./image/icons.svg#typeList" />
+                </svg>
+              </button>
+              <button class="active button-right gps">
+                <svg>
+                  <use xlink:href="./image/icons.svg#typeGPS" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="other-blocks">
+            <div class="blocks-item">
+              <div class="item-image">
+                <div class="image-overlay">
+                  <span class="overlay-sale">Хит продаж</span>
+                  <div class="overlay-favorite">
+                    <span>
+                      <svg>
+                        <use xlink:href="./image/icons.svg#star" />
+                      </svg>
+                    </span>
+                  </div>
+                  <div class="tags">
+                    <div class="tag-youtube">
+                      <svg>
+                        <use xlink:href="./image/icons.svg#youtube" />
+                      </svg>
+                    </div>
+                    <div class="tag-photo">
+                      <svg>
+                        <use xlink:href="./image/icons.svg#photo" />
+                      </svg>
+                      4/18
+                    </div>
+                  </div>
+                </div>
+                <img src="./image/image(6).png" alt="img" />
+              </div>
+              <div class="item-text">
+                <h3 class="text-title">
+                  Уютный пентхаус в стиле Ар-Деко с видом на набережную
+                </h3>
+                <p class="text-jk">ЖК «Cloud Nine»</p>
+                <div class="text-area">
+                  <p class="area-item">
+                    5 (3)
+                    <span>Комнат (спален)</span>
+                  </p>
+                  <p class="area-item">
+                    1850м<sup>2</sup>
+                    <span>Общая площадь</span>
+                  </p>
+                  <p class="area-item">
+                    4/18
+                    <span>Этаж/ этажность</span>
+                  </p>
+                  <p class="area-item last-item">
+                    3
+                    <span>Санузлов</span>
+                  </p>
+                </div>
+                <p class="text-price">8 430 750 000 ₽</p>
+                <div class="text-areaId">
+                  <p>922 000 ₽/м2</p>
+                  <span>id: 653415</span>
+                </div>
+              </div>
+            </div>
+            <div class="blocks-item">
+              <div class="item-image">
+                <div class="image-overlay">
+                  <div class="overlay-favorite">
+                    <span>
+                      <svg>
+                        <use xlink:href="./image/icons.svg#star" />
+                      </svg>
+                    </span>
+                  </div>
+                  <div class="tags">
+                    <div class="tag-youtube">
+                      <svg>
+                        <use xlink:href="./image/icons.svg#youtube" />
+                      </svg>
+                    </div>
+                    <div class="tag-photo">
+                      <svg>
+                        <use xlink:href="./image/icons.svg#photo" />
+                      </svg>
+                      4/18
+                    </div>
+                  </div>
+                </div>
+                <img src="./image/image(7).png" alt="img" />
+              </div>
+              <div class="item-text">
+                <h3 class="text-title">
+                  Апартаменты с террасой и видом на площадь
+                </h3>
+                <p class="text-jk">ЖК «Cloud Nine»</p>
+                <div class="text-area">
+                  <p class="area-item">
+                    4 (2)
+                    <span>Комнат (спален)</span>
+                  </p>
+                  <p class="area-item">
+                    389 м<sup>2</sup>
+                    <span>Общая площадь</span>
+                  </p>
+                  <p class="area-item">
+                    5/9
+                    <span>Этаж/ этажность</span>
+                  </p>
+                  <p class="area-item last-item">
+                    2
+                    <span>Санузлов</span>
+                  </p>
+                </div>
+                <p class="text-price">80 660 750 ₽</p>
+                <div class="text-areaId">
+                  <p>922 000 ₽/м2</p>
+                  <span>id: 653415</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var elems = document.querySelectorAll("select");
+        var instances = M.FormSelect.init(elems);
+      });
+      $(".openmodal, .show, .hideModal, .clear").click(function () {
+        $(".modal-filter").slideToggle();
+      });
+    </script>
+  </body>
+</html>
