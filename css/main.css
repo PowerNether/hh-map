@@ -209,6 +209,25 @@ ymaps .termin-main-box {
 
 .page-node-2 button {
   cursor: pointer !important;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.page-node-2 a:hover {
+  -webkit-filter: brightness(0.9);
+          filter: brightness(0.9);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.page-node-2 button:hover {
+  -webkit-filter: brightness(0.9);
+          filter: brightness(0.9);
+}
+
+.page-node-2 button.active:hover {
+  -webkit-filter: brightness(1);
+          filter: brightness(1);
 }
 
 .page-node-2 .filter-menu {
@@ -345,7 +364,7 @@ ymaps .termin-main-box {
 .page-node-2 .filter-menu .menu-price input:hover,
 .page-node-2 .filter-menu .menu-price input:focus {
   text-align: center;
-  width: 30px;
+  width: 50%;
   border: none;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -437,7 +456,7 @@ ymaps .termin-main-box {
 .page-node-2 .filter-menu .menu-area input:hover,
 .page-node-2 .filter-menu .menu-area input:focus {
   text-align: center;
-  width: 30px;
+  width: 50%;
   border: none;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -546,6 +565,7 @@ ymaps .termin-main-box {
   width: 8px;
   height: 6px;
   margin-left: 8px;
+  cursor: pointer;
 }
 
 .page-node-2 .filter-map .map-card .card-overlay .chip {
@@ -584,6 +604,7 @@ ymaps .termin-main-box {
   background: #e9e6fa;
   color: #5947b3;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .page-node-2 .filter-map .map-card .card-overlay .tags-list {
@@ -1113,6 +1134,7 @@ ymaps .termin-main-box {
 .page-node-2 .filter-map .map-apart .apart-otherLots .other-blocks .blocks-item .item-image .image-overlay .tags .tag-youtube svg {
   width: 15px;
   height: 10px;
+  cursor: pointer;
 }
 
 .page-node-2 .filter-map .map-apart .apart-otherLots .other-blocks .blocks-item .item-image .image-overlay .tags .tag-photo {
@@ -1260,6 +1282,10 @@ ymaps .termin-main-box {
           justify-content: space-between;
 }
 
+.page-node-2 .modal-filter form .inputs .input {
+  margin-right: 10px;
+}
+
 .page-node-2 .modal-filter form .inputs .input p.input-title {
   font-size: 14px;
   line-height: 15px;
@@ -1267,7 +1293,7 @@ ymaps .termin-main-box {
   margin: 0 0 16px;
 }
 
-.page-node-2 .modal-filter form .inputs .input div {
+.page-node-2 .modal-filter form .inputs .input div.input-text {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -1283,17 +1309,17 @@ ymaps .termin-main-box {
   min-width: 136px;
 }
 
-.page-node-2 .modal-filter form .inputs .input div p {
+.page-node-2 .modal-filter form .inputs .input div.input-text p {
   font-size: 14px;
   line-height: 16px;
   color: #333333;
 }
 
-.page-node-2 .modal-filter form .inputs .input div input,
-.page-node-2 .modal-filter form .inputs .input div input:hover,
-.page-node-2 .modal-filter form .inputs .input div input:focus {
+.page-node-2 .modal-filter form .inputs .input div.input-text input,
+.page-node-2 .modal-filter form .inputs .input div.input-text input:hover,
+.page-node-2 .modal-filter form .inputs .input div.input-text input:focus {
   text-align: center;
-  width: 30px;
+  width: 50%;
   border: none;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -1303,26 +1329,90 @@ ymaps .termin-main-box {
   margin: 0 10px;
 }
 
-.page-node-2 .modal-filter form .inputs .input div ::-webkit-input-placeholder {
+.page-node-2 .modal-filter form .inputs .input div.input-text ::-webkit-input-placeholder {
   color: #cccccc;
 }
 
-.page-node-2 .modal-filter form .inputs .input div :-ms-input-placeholder {
+.page-node-2 .modal-filter form .inputs .input div.input-text :-ms-input-placeholder {
   color: #cccccc;
 }
 
-.page-node-2 .modal-filter form .inputs .input div ::-ms-input-placeholder {
+.page-node-2 .modal-filter form .inputs .input div.input-text ::-ms-input-placeholder {
   color: #cccccc;
 }
 
-.page-node-2 .modal-filter form .inputs .input div ::placeholder {
+.page-node-2 .modal-filter form .inputs .input div.input-text ::placeholder {
   color: #cccccc;
 }
 
-.page-node-2 .modal-filter form .inputs .input div p.area-desc {
+.page-node-2 .modal-filter form .inputs .input div.input-text p.area-desc {
   padding: 0 12px;
   line-height: 42px;
   border-left: 1px solid #ccc;
+}
+
+.page-node-2 .modal-filter form .inputs .input .input-range {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.page-node-2 .modal-filter form .inputs .input .input-range input.range-back {
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+}
+
+.page-node-2 .modal-filter form .inputs .input .input-range input.range {
+  margin: 0;
+  width: 50%;
+}
+
+.page-node-2 .modal-filter form .inputs .input .input-range input.range:hover input.range:focus {
+  margin: 0 !important;
+}
+
+.page-node-2 .modal-filter form .inputs .input .input-range span.thumb {
+  display: none;
+}
+
+.page-node-2 .modal-filter form .inputs .input .input-range input[type=range] {
+  border: none;
+  -webkit-appearance: none;
+  width: 100%;
+  height: 1px;
+  border-radius: 5px;
+  background-color: #5947B3;
+  outline: none;
+}
+
+.page-node-2 .modal-filter form .inputs .input .input-range input[type=range]:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.page-node-2 .modal-filter form .inputs .input .input-range input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 7px;
+  height: 7px;
+  margin-top: -3px;
+  border-radius: 50%;
+  background: #5947B3;
+  cursor: e-resize;
+}
+
+.page-node-2 .modal-filter form .inputs .input .input-range input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 1px;
+  cursor: e-resize;
+  background: #5947B3;
 }
 
 .page-node-2 .modal-filter form .tags {
@@ -1337,9 +1427,12 @@ ymaps .termin-main-box {
 }
 
 .page-node-2 .modal-filter form .tags p {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
   padding: 0 16px;
   border-radius: 3px;
   border: 1px solid #cccccc;
+  background-color: #fff;
   height: 42px;
   font-size: 15px;
   line-height: 42px;
@@ -1352,6 +1445,7 @@ ymaps .termin-main-box {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 
 .page-node-2 .modal-filter form .tags p span {
@@ -1386,6 +1480,11 @@ ymaps .termin-main-box {
   text-align: center;
   color: #fff;
   cursor: pointer;
+}
+
+.page-node-2 .modal-filter form .tags p:hover {
+  -webkit-filter: brightness(0.9);
+          filter: brightness(0.9);
 }
 
 .page-node-2 .modal-filter .buttons {

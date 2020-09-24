@@ -31,8 +31,8 @@
         <input type="text" placeholder="до" />
       </div>
       <div class="menu-currency">
-        <button class="currenct-one active">₽</button>
-        <button class="currenct-two">$</button>
+        <button class="currency-btn currenct-one active">₽</button>
+        <button class="currency-btn currenct-two">$</button>
       </div>
       <div class="menu-area">
         <input type="text" placeholder="от" />
@@ -63,65 +63,177 @@
           <div class="inputs">
             <div class="input">
               <p class="input-title">Год постройки</p>
-              <div>
+              <div class="input-text">
                 <input type="text" placeholder="от" />
                 <p>...</p>
                 <input type="text" placeholder="до" />
+              </div>
+              <div class="input-range">
+                <input
+                  class="range range-back"
+                  type="range"
+                  value="100"
+                  min="0"
+                  max="100"
+                />
+                <input
+                  class="range range-next"
+                  type="range"
+                  value="100"
+                  min="0"
+                  max="100"
+                />
               </div>
             </div>
             <div class="input">
               <p class="input-title">Этаж</p>
-              <div>
+              <div class="input-text">
                 <input type="text" placeholder="от" />
                 <p>...</p>
                 <input type="text" placeholder="до" />
+              </div>
+              <div class="input-range">
+                <input
+                  class="range range-back"
+                  type="range"
+                  value="100"
+                  min="0"
+                  max="100"
+                />
+                <input
+                  class="range range-next"
+                  type="range"
+                  value="100"
+                  min="0"
+                  max="100"
+                />
               </div>
             </div>
             <div class="input">
               <p class="input-title">Квартир на этаже</p>
-              <div>
+              <div class="input-text">
                 <input type="text" placeholder="от" />
                 <p>...</p>
                 <input type="text" placeholder="до" />
+              </div>
+              <div class="input-range">
+                <input
+                  class="range range-back"
+                  type="range"
+                  value="100"
+                  min="0"
+                  max="100"
+                />
+                <input
+                  class="range range-next"
+                  type="range"
+                  value="100"
+                  min="0"
+                  max="100"
+                />
               </div>
             </div>
             <div class="input">
               <p class="input-title">Жилая площадь</p>
-              <div>
+              <div class="input-text">
                 <input type="text" placeholder="от" />
                 <p>...</p>
                 <input type="text" placeholder="до" />
                 <p class="area-desc">м<sup>2</sup></p>
+              </div>
+              <div class="input-range">
+                <input
+                  class="range range-back"
+                  type="range"
+                  value="100"
+                  min="0"
+                  max="100"
+                />
+                <input
+                  class="range range-next"
+                  type="range"
+                  value="100"
+                  min="0"
+                  max="100"
+                />
               </div>
             </div>
             <div class="input">
               <p class="input-title">Площадь кухни</p>
-              <div>
+              <div class="input-text">
                 <input type="text" placeholder="от" />
                 <p>...</p>
                 <input type="text" placeholder="до" />
 
                 <p class="area-desc">м<sup>2</sup></p>
+              </div>
+              <div class="input-range">
+                <input
+                  class="range range-back"
+                  type="range"
+                  value="100"
+                  min="0"
+                  max="100"
+                />
+                <input
+                  class="range range-next"
+                  type="range"
+                  value="100"
+                  min="0"
+                  max="100"
+                />
               </div>
             </div>
             <div class="input">
               <p class="input-title">Площадь терассы</p>
-              <div>
+              <div class="input-text">
                 <input type="text" placeholder="от" />
                 <p>...</p>
                 <input type="text" placeholder="до" />
 
                 <p class="area-desc">м<sup>2</sup></p>
               </div>
+              <div class="input-range">
+                <input
+                  class="range range-back"
+                  type="range"
+                  value="100"
+                  min="0"
+                  max="100"
+                />
+                <input
+                  class="range range-next"
+                  type="range"
+                  value="100"
+                  min="0"
+                  max="100"
+                />
+              </div>
             </div>
             <div class="input">
               <p class="input-title">Высота потолков</p>
-              <div>
+              <div class="input-text">
                 <input type="text" placeholder="от" />
                 <p>...</p>
                 <input type="text" placeholder="до" />
 
                 <p class="area-desc">м<sup>2</sup></p>
+              </div>
+              <div class="input-range">
+                <input
+                  class="range range-back"
+                  type="range"
+                  value="100"
+                  min="0"
+                  max="100"
+                />
+                <input
+                  class="range range-next"
+                  type="range"
+                  value="100"
+                  min="0"
+                  max="100"
+                />
               </div>
             </div>
           </div>
@@ -295,8 +407,8 @@
           <div class="otherLots-filter">
             <p>Объектов:</p>
             <div class="buttons">
-              <button class="active button-left">140 найдено</button>
-              <button class="button-right">800 в продаже</button>
+              <button class="btn-filter active button-left">140 найдено</button>
+              <button class="btn-filter button-right">800 в продаже</button>
             </div>
             <a href="#">
               По рейтингу
@@ -305,22 +417,22 @@
               </svg>
             </a>
             <div class="buttons mini">
-              <button class="button-left">
+              <button class="btn-view button-left">
                 <svg>
                   <use xlink:href="./image/icons.svg#typeBlock" />
                 </svg>
               </button>
-              <button>
+              <button class="btn-view">
                 <svg>
                   <use xlink:href="./image/icons.svg#typeBlocks" />
                 </svg>
               </button>
-              <button>
+              <button class="btn-view">
                 <svg>
                   <use xlink:href="./image/icons.svg#typeList" />
                 </svg>
               </button>
-              <button class="active button-right gps">
+              <button class="btn-view active button-right gps">
                 <svg>
                   <use xlink:href="./image/icons.svg#typeGPS" />
                 </svg>
@@ -454,6 +566,33 @@
       });
       $(".openmodal, .show, .hideModal, .clear").click(function () {
         $(".modal-filter").slideToggle();
+      });
+
+      $(".currency-btn").click(function () {
+        $(".currency-btn").removeClass("active");
+        $(this).addClass("active");
+      });
+      $(".btn-filter").click(function () {
+        $(".btn-filter").removeClass("active");
+        $(this).addClass("active");
+      });
+      $(".btn-view").click(function () {
+        $(".btn-view").removeClass("active");
+        $(this).addClass("active");
+      });
+      var slider = document.getElementById("test-slider");
+      noUiSlider.create(slider, {
+        start: [20, 80],
+        connect: true,
+        step: 1,
+        orientation: "horizontal", // 'horizontal' or 'vertical'
+        range: {
+          min: 0,
+          max: 100,
+        },
+        format: wNumb({
+          decimals: 0,
+        }),
       });
     </script>
   </body>
