@@ -438,9 +438,9 @@ ymaps .termin-main-box {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   border-right: 1px solid #ccc;
   height: 100%;
   width: 100%;
@@ -456,7 +456,7 @@ ymaps .termin-main-box {
 .page-node-2 .filter-menu .menu-area input:hover,
 .page-node-2 .filter-menu .menu-area input:focus {
   text-align: center;
-  width: 50%;
+  width: 25%;
   border: none;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -483,9 +483,11 @@ ymaps .termin-main-box {
 }
 
 .page-node-2 .filter-menu .menu-area .area-desc {
-  padding-left: 12px;
   color: #333333;
-  margin-right: 12px;
+  min-width: 42px;
+  max-width: 42px;
+  text-align: center;
+  padding-right: 12px;
 }
 
 .page-node-2 .filter-menu .menu-button {
@@ -1300,9 +1302,9 @@ ymaps .termin-main-box {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   border: 1px solid #cccccc;
   border-radius: 3px;
   height: 42px;
@@ -1319,7 +1321,7 @@ ymaps .termin-main-box {
 .page-node-2 .modal-filter form .inputs .input div.input-text input:hover,
 .page-node-2 .modal-filter form .inputs .input div.input-text input:focus {
   text-align: center;
-  width: 50%;
+  width: 25%;
   border: none;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -1346,7 +1348,9 @@ ymaps .termin-main-box {
 }
 
 .page-node-2 .modal-filter form .inputs .input div.input-text p.area-desc {
-  padding: 0 12px;
+  min-width: 42px;
+  max-width: 42px;
+  text-align: center;
   line-height: 42px;
   border-left: 1px solid #ccc;
 }
@@ -1392,9 +1396,13 @@ ymaps .termin-main-box {
   outline: none;
 }
 
-.page-node-2 .modal-filter form .inputs .input .input-range input[type=range]:focus {
+.page-node-2 .modal-filter form .inputs .input .input-range input[type=range]:focus,
+.page-node-2 .modal-filter form .inputs .input .input-range input[type=range]:focus-within,
+.page-node-2 .modal-filter form .inputs .input .input-range input[type=range]:hover {
   -webkit-box-shadow: none;
           box-shadow: none;
+  border: none;
+  outline: none;
 }
 
 .page-node-2 .modal-filter form .inputs .input .input-range input[type=range]::-webkit-slider-thumb {
