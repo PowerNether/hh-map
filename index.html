@@ -319,8 +319,10 @@
       $(".apart-toggle").on("click tap", function () {
         if (!$(".map-apart").hasClass("map-apart__hide")) {
           $(".map-apart").addClass("map-apart__hide");
+          $(".tags-list").css("margin-right", "32px");
         } else {
           $(".map-apart").removeClass("map-apart__hide");
+          $(".tags-list").css("margin-right", "4px");
         }
       });
     </script>

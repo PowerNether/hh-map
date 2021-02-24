@@ -1115,12 +1115,16 @@ ymaps .termin-main-box {
   display: none;
 }
 
+.page-node-2 .filter-map .map-apart__hide .tags-list {
+  margin-right: 48px;
+}
+
+.page-node-2 .filter-map .map-apart__hide .apart-toggle {
+  top: 14px;
+  left: -48px;
+}
+
 .page-node-2 .filter-map .map-apart__hide .apart-toggle__icon {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
-}
-
-.page-node-2 .filter-map .map-apart__hide .apart-toggle:hover {
-  -webkit-transform: translateX(-25%);
-          transform: translateX(-25%);
 }
