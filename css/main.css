@@ -538,6 +538,7 @@ ymaps .termin-main-box {
   z-index: 1000;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  cursor: pointer;
 }
 
 .page-node-2 .filter-map .map-apart .apart-toggle__icon {
