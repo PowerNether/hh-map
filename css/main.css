@@ -795,7 +795,6 @@ ymaps .termin-main-box {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-left: 16px;
 }
 
 .page-node-2 .filter-map .map-apart .apart-otherLots .otherLots-filter .buttons button {
