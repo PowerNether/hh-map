@@ -11,299 +11,19 @@
     <title>HomeHunter</title>
   </head>
   <body class="page-node-2">
-    <div class="filter-menu">
-      <div class="menu-search">
-        <svg>
-          <use xlink:href="./image/icons.svg#search" />
-        </svg>
-        <input type="text" placeholder="Введите параметр, ID, адрес или ЖК" />
-      </div>
-      <div class="menu-selected">
-        <p>Комнат</p>
-        <span class="rooms-sum">4</span>
-        <svg>
-          <use xlink:href="./image/icons.svg#charon" />
-        </svg>
-      </div>
-      <div class="menu-price">
-        <input type="text" placeholder="от" />
-        <p>...</p>
-        <input type="text" placeholder="до" />
-      </div>
-      <div class="menu-currency">
-        <button class="currency-btn currenct-one active">₽</button>
-        <button class="currency-btn currenct-two">$</button>
-      </div>
-      <div class="menu-area">
-        <input type="text" placeholder="от" />
-        <p>...</p>
-        <input type="text" placeholder="до" />
-        <p class="area-desc">м<sup>2</sup></p>
-      </div>
-      <div class="menu-selected">
-        <p>Отделка</p>
-        <span class="rooms-sum">2</span>
-        <svg>
-          <use xlink:href="./image/icons.svg#charon" />
-        </svg>
-      </div>
-      <div class="menu-selected">
-        <p>Ещё фильтры</p>
-        <span class="rooms-sum">7</span>
-        <svg>
-          <use xlink:href="./image/icons.svg#charon" />
-        </svg>
-      </div>
-      <div class="menu-button">
-        <button class="openmodal">Показать <span>830</span></button>
-      </div>
-      <div class="modal-filter">
-        <h2 class="modal-title">Расположение и планировка</h2>
-        <form>
-          <div class="inputs">
-            <div class="input">
-              <p class="input-title">Год постройки</p>
-              <div class="input-text">
-                <input type="text" placeholder="от" />
-                <p>...</p>
-                <input type="text" placeholder="до" />
-              </div>
-              <div class="input-range">
-                <input
-                  class="range range-back"
-                  type="range"
-                  value="100"
-                  min="0"
-                  max="100"
-                />
-                <input
-                  class="range range-next"
-                  type="range"
-                  value="100"
-                  min="0"
-                  max="100"
-                />
-              </div>
-            </div>
-            <div class="input">
-              <p class="input-title">Этаж</p>
-              <div class="input-text">
-                <input type="text" placeholder="от" />
-                <p>...</p>
-                <input type="text" placeholder="до" />
-              </div>
-              <div class="input-range">
-                <input
-                  class="range range-back"
-                  type="range"
-                  value="100"
-                  min="0"
-                  max="100"
-                />
-                <input
-                  class="range range-next"
-                  type="range"
-                  value="100"
-                  min="0"
-                  max="100"
-                />
-              </div>
-            </div>
-            <div class="input">
-              <p class="input-title">Квартир на этаже</p>
-              <div class="input-text">
-                <input type="text" placeholder="от" />
-                <p>...</p>
-                <input type="text" placeholder="до" />
-              </div>
-              <div class="input-range">
-                <input
-                  class="range range-back"
-                  type="range"
-                  value="100"
-                  min="0"
-                  max="100"
-                />
-                <input
-                  class="range range-next"
-                  type="range"
-                  value="100"
-                  min="0"
-                  max="100"
-                />
-              </div>
-            </div>
-            <div class="input">
-              <p class="input-title">Жилая площадь</p>
-              <div class="input-text">
-                <input type="text" placeholder="от" />
-                <p>...</p>
-                <input type="text" placeholder="до" />
-                <p class="area-desc">м<sup>2</sup></p>
-              </div>
-              <div class="input-range">
-                <input
-                  class="range range-back"
-                  type="range"
-                  value="100"
-                  min="0"
-                  max="100"
-                />
-                <input
-                  class="range range-next"
-                  type="range"
-                  value="100"
-                  min="0"
-                  max="100"
-                />
-              </div>
-            </div>
-            <div class="input">
-              <p class="input-title">Площадь кухни</p>
-              <div class="input-text">
-                <input type="text" placeholder="от" />
-                <p>...</p>
-                <input type="text" placeholder="до" />
-
-                <p class="area-desc">м<sup>2</sup></p>
-              </div>
-              <div class="input-range">
-                <input
-                  class="range range-back"
-                  type="range"
-                  value="100"
-                  min="0"
-                  max="100"
-                />
-                <input
-                  class="range range-next"
-                  type="range"
-                  value="100"
-                  min="0"
-                  max="100"
-                />
-              </div>
-            </div>
-            <div class="input">
-              <p class="input-title">Площадь терассы</p>
-              <div class="input-text">
-                <input type="text" placeholder="от" />
-                <p>...</p>
-                <input type="text" placeholder="до" />
-
-                <p class="area-desc">м<sup>2</sup></p>
-              </div>
-              <div class="input-range">
-                <input
-                  class="range range-back"
-                  type="range"
-                  value="100"
-                  min="0"
-                  max="100"
-                />
-                <input
-                  class="range range-next"
-                  type="range"
-                  value="100"
-                  min="0"
-                  max="100"
-                />
-              </div>
-            </div>
-            <div class="input">
-              <p class="input-title">Высота потолков</p>
-              <div class="input-text">
-                <input type="text" placeholder="от" />
-                <p>...</p>
-                <input type="text" placeholder="до" />
-
-                <p class="area-desc">м<sup>2</sup></p>
-              </div>
-              <div class="input-range">
-                <input
-                  class="range range-back"
-                  type="range"
-                  value="100"
-                  min="0"
-                  max="100"
-                />
-                <input
-                  class="range range-next"
-                  type="range"
-                  value="100"
-                  min="0"
-                  max="100"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="tags">
-            <p>Свободная планировка</p>
-            <p>Видовая <span class="hint">?</span></p>
-            <p>Готовый дизайн-проект</p>
-            <p>Лоджия/балкон</p>
-            <p>Изолированность кухни <span class="color-p">0</span></p>
-            <p>Второй свет <span class="hint">?</span></p>
-            <p>Окна выходят <span class="color-p">0</span></p>
-            <p>Выход окон на 3+ стороны</p>
-            <p>Панорамные окна</p>
-            <p>Ванная с окном</p>
-            <p>Отдельный вход</p>
-            <p>Свой лифт до квартиры</p>
-            <p>Санузлов <span class="color-p">0</span></p>
-            <p>Детская с санузлом</p>
-            <p>Спальня с санузлом</p>
-            <p>Спальня с гардеробной</p>
-            <p>Дровяной камин</p>
-            <p>Сауна в квартире</p>
-          </div>
-        </form>
-        <div class="buttons">
-          <button class="show">Показать <span>830</span></button>
-          <button class="clear">Сбросить все фильтры</button>
-          <a class="hideModal" href="#">Свернуть фильтры</a>
-        </div>
-      </div>
-    </div>
     <div class="filter-map">
       <div class="map-card">
         <div class="card-overlay">
           <div class="tags">
-            <div class="chip color-p">
-              Квартиры
-              <svg>
-                <use xlink:href="./image/icons.svg#close" />
-              </svg>
-            </div>
-            <div class="chip color-g">
-              Апартаменты
-              <svg>
-                <use xlink:href="./image/icons.svg#close" />
-              </svg>
-            </div>
-            <div class="chip color-p">
-              С отделкой
-              <svg>
-                <use xlink:href="./image/icons.svg#close" />
-              </svg>
-            </div>
-            <div class="chip color-g">
-              Без отделки
-              <svg>
-                <use xlink:href="./image/icons.svg#close" />
-              </svg>
-            </div>
+            <div class="chip color-v">Квартиры</div>
+            <div class="chip color-g">Апартаменты</div>
+            <div class="chip color-v">С отделкой</div>
+            <div class="chip color-v">Без отделки</div>
             <div class="tags-list">
               <svg>
                 <use xlink:href="./image/icons.svg#list" />
               </svg>
               <p>Списком</p>
-            </div>
-            <div class="chip color-v">
-              1, 3, 5-к., студия
-              <svg>
-                <use xlink:href="./image/icons.svg#close" />
-              </svg>
             </div>
             <div class="chip color-v">
               Панорамные окна
@@ -313,11 +33,17 @@
             </div>
             <div class="chip color-w">
               Еще
-              <svg>
+              <svg class="charon-white">
                 <use xlink:href="./image/icons.svg#charon" />
               </svg>
             </div>
-            <div class="chip color-lp">Сбросить все фильтры</div>
+            <div class="chip color-sub">
+              <svg>
+                <use xlink:href="./image/icons.svg#mail" />
+              </svg>
+              Подписаться на фильтр
+            </div>
+            <div class="chip color-r">Сбросить все фильтры</div>
           </div>
           <div class="points">
             <div class="points-item point-one">
@@ -363,6 +89,17 @@
         <img src="./image/map.png" alt="Карта" class="card" />
       </div>
       <div class="map-apart">
+        <div class="apart-toggle">
+          <svg class="apart-toggle__icon">
+            <use xlink:href="./image/icons.svg#charonRightGrey" />
+          </svg>
+        </div>
+        <a class="apart-back" href="#">
+          <svg class="apart-back__icon">
+            <use xlink:href="./image/icons.svg#arrowLeftPurple" />
+          </svg>
+          Вернуться к выборке
+        </a>
         <div class="apart-mainLot">
           <div class="mainLot-desc">
             <div class="desc-logo">
@@ -405,49 +142,45 @@
         </div>
         <div class="apart-otherLots">
           <div class="otherLots-filter">
-            <p>Объектов:</p>
-            <div class="buttons">
-              <button class="btn-filter active button-left">140 найдено</button>
-              <button class="btn-filter button-right">800 в продаже</button>
+            <div class="otherLots-left">
+              <p>Объектов:</p>
+              <div class="buttons">
+                <button class="btn-filter active button-left">
+                  140 найдено
+                </button>
+                <button class="btn-filter button-right">800 в продаже</button>
+              </div>
             </div>
-            <a href="#">
-              По рейтингу
-              <svg>
-                <use xlink:href="./image/icons.svg#charon" />
-              </svg>
-            </a>
-            <div class="buttons mini">
-              <button class="btn-view button-left">
+            <div class="otherLots-right">
+              <a href="#">
+                По рейтингу
                 <svg>
-                  <use xlink:href="./image/icons.svg#typeBlock" />
+                  <use xlink:href="./image/icons.svg#charon" />
                 </svg>
-              </button>
-              <button class="btn-view">
-                <svg>
-                  <use xlink:href="./image/icons.svg#typeBlocks" />
-                </svg>
-              </button>
-              <button class="btn-view">
-                <svg>
-                  <use xlink:href="./image/icons.svg#typeList" />
-                </svg>
-              </button>
-              <button class="btn-view active button-right gps">
-                <svg>
-                  <use xlink:href="./image/icons.svg#typeGPS" />
-                </svg>
-              </button>
+              </a>
+              <div class="buttons mini">
+                <button class="btn-view active button-left">
+                  <svg>
+                    <use xlink:href="./image/icons.svg#typeBlock" />
+                  </svg>
+                </button>
+                <button class="btn-view button-right">
+                  <svg>
+                    <use xlink:href="./image/icons.svg#typeList" />
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
           <div class="other-blocks">
             <div class="blocks-item">
               <div class="item-image">
                 <div class="image-overlay">
-                  <span class="overlay-sale">Хит продаж</span>
+                  <span class="overlay-id overlay-id__red">ID L: 653415</span>
                   <div class="overlay-favorite">
                     <span>
                       <svg>
-                        <use xlink:href="./image/icons.svg#star" />
+                        <use xlink:href="./image/icons.svg#full-w" />
                       </svg>
                     </span>
                   </div>
@@ -491,19 +224,25 @@
                   </p>
                 </div>
                 <p class="text-price">8 430 750 000 ₽</p>
-                <div class="text-areaId">
-                  <p>922 000 ₽/м2</p>
-                  <span>id: 653415</span>
+                <p class="text-price__squares">922 000 ₽/м2</p>
+                <div class="text-favorite">
+                  <svg class="text-favorite__star">
+                    <use xlink:href="./image/icons.svg#starGrey" />
+                  </svg>
+                  <svg class="text-favorite__charrov">
+                    <use xlink:href="./image/icons.svg#charonBottomGrey" />
+                  </svg>
                 </div>
               </div>
             </div>
             <div class="blocks-item">
               <div class="item-image">
                 <div class="image-overlay">
+                  <span class="overlay-id">ID L: 653415</span>
                   <div class="overlay-favorite">
                     <span>
                       <svg>
-                        <use xlink:href="./image/icons.svg#star" />
+                        <use xlink:href="./image/icons.svg#full-w" />
                       </svg>
                     </span>
                   </div>
@@ -547,9 +286,14 @@
                   </p>
                 </div>
                 <p class="text-price">80 660 750 ₽</p>
-                <div class="text-areaId">
-                  <p>922 000 ₽/м2</p>
-                  <span>id: 653415</span>
+                <p class="text-price__squares">922 000 ₽/м2</p>
+                <div class="text-favorite">
+                  <svg class="text-favorite__star">
+                    <use xlink:href="./image/icons.svg#starGrey" />
+                  </svg>
+                  <svg class="text-favorite__charrov">
+                    <use xlink:href="./image/icons.svg#charonBottomGrey" />
+                  </svg>
                 </div>
               </div>
             </div>
@@ -560,14 +304,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        var elems = document.querySelectorAll("select");
-        var instances = M.FormSelect.init(elems);
-      });
-      $(".openmodal, .show, .hideModal, .clear").click(function () {
-        $(".modal-filter").slideToggle();
-      });
-
       $(".currency-btn").click(function () {
         $(".currency-btn").removeClass("active");
         $(this).addClass("active");
@@ -580,19 +316,12 @@
         $(".btn-view").removeClass("active");
         $(this).addClass("active");
       });
-      var slider = document.getElementById("test-slider");
-      noUiSlider.create(slider, {
-        start: [20, 80],
-        connect: true,
-        step: 1,
-        orientation: "horizontal", // 'horizontal' or 'vertical'
-        range: {
-          min: 0,
-          max: 100,
-        },
-        format: wNumb({
-          decimals: 0,
-        }),
+      $(".apart-toggle").on("click tap", function () {
+        if (!$(".map-apart").hasClass("map-apart__hide")) {
+          $(".map-apart").addClass("map-apart__hide");
+        } else {
+          $(".map-apart").removeClass("map-apart__hide");
+        }
       });
     </script>
   </body>
