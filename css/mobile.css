@@ -146,26 +146,6 @@
   .map-apart__hide {
     min-width: 0% !important;
   }
-  .page-node-2 .filter-map .map-apart .apart-otherLots .other-blocks .blocks-item.blocks-item__table {
-    position: relative;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-  .page-node-2 .filter-map .map-apart .apart-otherLots .other-blocks .blocks-item.blocks-item__table .item-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 40px;
-    max-height: 40px;
-  }
-  .page-node-2 .filter-map .map-apart .apart-otherLots .other-blocks .blocks-item.blocks-item__table .item-image img {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-  }
 }
 
 @media screen and (max-width: 1023px) {
